@@ -1,4 +1,4 @@
-# Forked from https://github.com/ZZROTDesign/alpine-ghost - I needed up-to-date version
+#### Forked from https://github.com/ZZROTDesign/alpine-ghost - I needed up-to-date version
 ---
 
 # Ghost on Alpine Linux
