@@ -11,7 +11,7 @@ ENV GHOST_VERSION latest
 WORKDIR $GHOST_SOURCE
 
 RUN apk --no-cache add tar tini \
-    && apk --no-cache add --virtual devs gcc make python ca-certificates \
+    && apk --no-cache add --virtual devs gcc make wget python ca-certificates \
 	&& wget -O ghost.zip "https://ghost.org/zip/ghost-${GHOST_VERSION}.zip" \
 	&& unzip ghost.zip \
 	&& npm install --production \
