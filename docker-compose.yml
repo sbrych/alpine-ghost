@@ -1,0 +1,11 @@
+version: '2'
+services:
+    ghost:
+        image: sbrych/alpine-ghost
+        environment:
+          PROD_DOMAIN: http://yourwebsiteurl.com/blog
+          NODE_ENV: production
+        volumes:
+          - ./your/contentfolder:/var/lib/ghost/
+        ports:
+            - 2368:2368
